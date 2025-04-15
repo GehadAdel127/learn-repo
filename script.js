@@ -54,3 +54,29 @@ randomButton.onclick = function(){
     num = Math.trunc(Math.random() * max) + min
     randomNum.textContent = num
 }
+
+// Checked Property
+const checkbox = document.getElementById("checkbox")
+const visa = document.getElementById("visa")
+const masterCard = document.getElementById("masterCard")
+const paypal = document.getElementById("paypal")
+const submit = document.getElementById("submit")
+const subResult = document.getElementById("subResult")
+const subPayment = document.getElementById("subPayment")
+
+submit.onclick = function(){
+    if(checkbox.checked){
+        subResult.textContent = `You're Subscribed!`
+    }else{
+        subResult.textContent = `You're NOT Subscribed!`
+    }
+    if(visa.checked){
+        subPayment.textContent = `You're paying with Visa!`
+    }else if(masterCard.checked){
+        subPayment.textContent = `You're paying with Master Card!`
+    }else if(paypal.checked){
+        subPayment.textContent = `You're paying with PayPal!`
+    }else{
+        subPayment.textContent = `You MUST select a payment type!`
+    }
+}
