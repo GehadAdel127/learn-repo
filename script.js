@@ -80,3 +80,25 @@ submit.onclick = function(){
         subPayment.textContent = `You MUST select a payment type!`
     }
 }
+
+// ternary operator : condition ? if true : if false
+
+
+// strings methods :
+let userName = 'eng Gehad   '
+console.log(userName.charAt(0));
+console.log(userName.indexOf('h'));
+console.log(userName.lastIndexOf('e'));
+console.log(userName.length);
+// trim() delete the spaces before and after the word
+console.log(userName.trim());
+console.log(userName.toUpperCase());
+console.log(userName.toLowerCase());
+console.log(userName.repeat(5));
+console.log(userName.startsWith('G'));
+console.log(userName.endsWith('d'));
+console.log(userName.includes('G'));
+console.log(userName.replaceAll(" " , "."));
+// padStart( means that the length of the sentence will be 15 and to reach to this number we will add . at the front of the sentence)
+console.log(userName.padStart(15 , "."));
+console.log(userName.padEnd(15 , "."));
