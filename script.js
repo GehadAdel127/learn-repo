@@ -102,3 +102,9 @@ console.log(userName.replaceAll(" " , "."));
 // padStart( means that the length of the sentence will be 15 and to reach to this number we will add . at the front of the sentence)
 console.log(userName.padStart(15 , "."));
 console.log(userName.padEnd(15 , "."));
+
+// string slicing variable.slice(start , end)
+
+let fullName = "Gehad Adel"
+let firstName = fullName.slice(0 , 5)
+console.log(firstName);
