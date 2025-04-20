@@ -121,3 +121,9 @@ console.log(lastName);
 let email = "Gehad1@gmail.com"
 let nameOfTheUser = email.slice(0 , email.indexOf("@"))
 console.log(nameOfTheUser);
+
+
+// method chaining
+let name1 = window.prompt("Please enter your name : ")
+name1 = name1.trim().charAt(0).toUpperCase() + name1.trim().slice(1).toLowerCase()
+console.log(name1);
