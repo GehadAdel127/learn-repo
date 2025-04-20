@@ -124,6 +124,13 @@ console.log(nameOfTheUser);
 
 
 // method chaining
-let name1 = window.prompt("Please enter your name : ")
-name1 = name1.trim().charAt(0).toUpperCase() + name1.trim().slice(1).toLowerCase()
-console.log(name1);
+// let name1 = window.prompt("Please enter your name : ")
+// name1 = name1.trim().charAt(0).toUpperCase() + name1.trim().slice(1).toLowerCase()
+// console.log(name1);
+
+
+// Number guessing game
+const minNum = 0
+const maxNum = 100
+const userAnswer = window.prompt("Guess number between 0 and 100 : ")
+const answer = Math.floor(Math.random() * (maxNum - minNum + 1))
