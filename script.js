@@ -136,7 +136,7 @@ let attempts = 0
 let guess
 let running = true
 
-let answer = Math.floor(Math.random() * (maxNum - minNum + 1))
+let answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
 while(running){
     guess = Number(window.prompt(`Guess number between ${minNum} and ${maxNum} : `))
     if(isNaN(guess)){
