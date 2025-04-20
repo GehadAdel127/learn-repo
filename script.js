@@ -108,3 +108,6 @@ console.log(userName.padEnd(15 , "."));
 let fullName = "Gehad Adel"
 let firstName = fullName.slice(0 , 5)
 console.log(firstName);
+
+// if i want to take the word for the end i can instead not write 0 but nothing 
+// and if i want to take from the end of the word i can use -1 to the last charecter
