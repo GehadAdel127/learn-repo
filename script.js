@@ -111,3 +111,13 @@ console.log(firstName);
 
 // if i want to take the word for the end i can instead not write 0 but nothing 
 // and if i want to take from the end of the word i can use -1 to the last charecter
+// if i want to take only the first name but i don't know the index :
+firstName = fullName.slice(0 , fullName.indexOf(" "))
+let lastName = fullName.slice(fullName.indexOf(" ") + 1)
+console.log(lastName);
+
+
+// exercise
+let email = "Gehad1@gmail.com"
+let nameOfTheUser = email.slice(0 , email.indexOf("@"))
+console.log(nameOfTheUser);
