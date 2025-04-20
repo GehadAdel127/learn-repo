@@ -4,18 +4,18 @@ let reset = document.getElementById("reset")
 let increase = document.getElementById("increase")
 let count = 0
 
-decrease.onclick = function (){
-    count--
-    number.textContent = count
-}
-increase.onclick = function (){
-    count++
-    number.textContent = count
-}
-reset.onclick = function (){
-    count = 0
-    number.textContent = count
-}
+// decrease.onclick = function (){
+//     count--
+//     number.textContent = count
+// }
+// increase.onclick = function (){
+//     count++
+//     number.textContent = count
+// }
+// reset.onclick = function (){
+//     count = 0
+//     number.textContent = count
+// }
 
 
 console.log(Math.PI);
@@ -50,10 +50,10 @@ const randomButton = document.getElementById("randomButton")
 let num
 const max = 10
 const min = 1
-randomButton.onclick = function(){
-    num = Math.trunc(Math.random() * max) + min
-    randomNum.textContent = num
-}
+// randomButton.onclick = function(){
+//     num = Math.trunc(Math.random() * max) + min
+//     randomNum.textContent = num
+// }
 
 // Checked Property
 const checkbox = document.getElementById("checkbox")
@@ -64,22 +64,22 @@ const submit = document.getElementById("submit")
 const subResult = document.getElementById("subResult")
 const subPayment = document.getElementById("subPayment")
 
-submit.onclick = function(){
-    if(checkbox.checked){
-        subResult.textContent = `You're Subscribed!`
-    }else{
-        subResult.textContent = `You're NOT Subscribed!`
-    }
-    if(visa.checked){
-        subPayment.textContent = `You're paying with Visa!`
-    }else if(masterCard.checked){
-        subPayment.textContent = `You're paying with Master Card!`
-    }else if(paypal.checked){
-        subPayment.textContent = `You're paying with PayPal!`
-    }else{
-        subPayment.textContent = `You MUST select a payment type!`
-    }
-}
+// submit.onclick = function(){
+//     if(checkbox.checked){
+//         subResult.textContent = `You're Subscribed!`
+//     }else{
+//         subResult.textContent = `You're NOT Subscribed!`
+//     }
+//     if(visa.checked){
+//         subPayment.textContent = `You're paying with Visa!`
+//     }else if(masterCard.checked){
+//         subPayment.textContent = `You're paying with Master Card!`
+//     }else if(paypal.checked){
+//         subPayment.textContent = `You're paying with PayPal!`
+//     }else{
+//         subPayment.textContent = `You MUST select a payment type!`
+//     }
+// }
 
 // ternary operator : condition ? if true : if false
 
@@ -155,3 +155,21 @@ let answer = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum
 //         }
 //     }
 // }
+
+
+
+// spread operators:
+let numbers = [1,2,3,4,5]
+let maxNumber = Math.max(...numbers)
+let minNumber = Math.min(...numbers)
+console.log(maxNumber);
+console.log(minNumber);
+
+let myName = "Gehad"
+let letters = [...myName]
+console.log(letters);
+
+
+let fruits = ["Apple" , "Banana" , "Orange"]
+let newFruits = [...fruits , "Mango"]
+console.log(newFruits);
