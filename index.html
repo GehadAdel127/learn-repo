@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="counter">
+    <!-- <div class="counter">
         <h2 id="number">0</h2>
         <div class="buttons">
             <button id="decrease">decrease</button>
             <button id="reset">reset</button>
             <button id="increase">increase</button>
         </div>
-    </div>
-    <div class="randomNum">
+    </div> -->
+    <!-- <div class="randomNum">
         <label id="randomNum"></label>
         <button id="randomButton">Roll</button>
-    </div>
-    <div class="checkedProperty">
+    </div> -->
+    <!-- <div class="checkedProperty">
         <input type="checkbox" id="checkbox" name="card">
         <label for="checkbox" id="subscribe">Subscribe</label>
         <br>
@@ -35,7 +35,23 @@
         <button type="submit" id="submit">Submit</button>
         <p id="subResult"></p>
         <p id="subPayment"></p>
-    </div>
+    </div> -->
+    <form class="conversionForm">
+        <h1>Temperature Conversion:</h1>
+        <input type="number" id="textBox" value="0">
+        <div class="inputs">
+            <input type="radio" name="unit" id="toFah">
+            <label for="toFah">Celsius > Fahrenheit</label>
+        </div>
+        <div class="inputs">
+            <input type="radio" name="unit" id="toCels">
+            <label for="toCels">Fahrenheit > Celsius</label>
+        </div>
+
+        <button type="button" onclick="convert()">Submit</button>
+        <p id="result"></p>
+    </form>
 </body>
 <script src="script.js"></script>
+<script src="temperatureCoversionProgram.js"></script>
 </html>

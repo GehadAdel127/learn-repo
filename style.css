@@ -44,3 +44,46 @@
 .checkedProperty{
     margin-top: 50px;
 }
+
+
+/* temperature conversion program */
+.conversionForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    gap: 20px;
+    text-align: center;
+    background: #b4bdbe;
+    border: 1px solid #012831;
+    box-shadow: 5px 10px 15px #012831;
+    border-radius: 5px;
+    width: 350px;
+    height: 100%;
+    color: #012831;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+}
+.conversionForm input[type = "number"]{
+    width: 45%;
+    padding: 10px 5px;
+    text-align: center;
+
+}
+.conversionForm button{
+    cursor: pointer;
+    width: 50%;
+    padding: 10px 20px;
+    border: 1px solid #012831;
+    border-radius: 5px;
+    background: #c7e1ee;
+    color: #012831;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+.conversionForm button:hover{
+    background: #eff4f7;
+}
