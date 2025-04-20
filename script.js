@@ -130,7 +130,28 @@ console.log(nameOfTheUser);
 
 
 // Number guessing game
-const minNum = 0
-const maxNum = 100
-const userAnswer = window.prompt("Guess number between 0 and 100 : ")
-const answer = Math.floor(Math.random() * (maxNum - minNum + 1))
+let minNum = 0
+let maxNum = 100
+let attempts = 0
+let guess
+let running = true
+
+let answer = Math.floor(Math.random() * (maxNum - minNum + 1))
+while(running){
+    guess = Number(window.prompt(`Guess number between ${minNum} and ${maxNum} : `))
+    if(isNaN(guess)){
+        window.alert("Please enter a valid number")
+    }else if(guess < minNum || guess > maxNum){
+        window.alert(`Please enter number between ${minNum} and ${maxNum}`)
+    }else{
+        attempts++
+        if(guess < answer){
+            window.alert("Too low try again!")
+        }else if(guess > answer){
+            window.alert("Too large try again!")
+        }else{
+            window.alert(`Correct the answer is ${answer} it took you ${attempts} attempts`)
+            running = false
+        }
+    }
+}
