@@ -173,3 +173,17 @@ console.log(letters);
 let fruits = ["Apple" , "Banana" , "Orange"]
 let newFruits = [...fruits , "Mango"]
 console.log(newFruits);
+
+
+// rest parameters: the opposite of the spread operators
+function allNames(...names){
+    console.log(names);
+    console.log(...names);
+    
+}
+
+const name2 = "Aida"
+const name3 = "Ahmad"
+const name4 = "Nour"
+
+allNames(name2 , name3 , name4)
