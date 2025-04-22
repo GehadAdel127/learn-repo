@@ -248,3 +248,10 @@ console.log(`$${total}`);
 function sum(accumulator , element){
     return accumulator + element
 }
+
+
+// function expressions:
+const hello1 = function (){
+    console.log("Hello!");
+}
+hello1()
