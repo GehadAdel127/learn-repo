@@ -236,3 +236,15 @@ function even(element){
 }
 
 console.log(evensNumbers);
+
+
+// reduce() method : reduce the elements of an array to a single value
+
+const prices = [5 , 10 , 15 , 20]
+const total =  prices.reduce(sum)
+
+console.log(total);
+
+function sum(accumulator , element){
+    return accumulator + element
+}
