@@ -199,3 +199,18 @@ function goodbye(){
     console.log("GoodBye!");
 }
 hello(goodbye)
+
+// forEach() method:
+let numbersOfArray = [1 , 2 , 3 , 4 , 5]
+
+// the elements are doubled then displayed
+numbersOfArray.forEach(double)
+numbersOfArray.forEach(display)
+
+function display(element){
+    console.log(element);
+    
+}
+function double (element , index , array){
+    array[index] = element * 2
+}
