@@ -187,3 +187,6 @@ const name3 = "Ahmad"
 const name4 = "Nour"
 
 allNames(name2 , name3 , name4)
+
+
+// Dice Roller game:

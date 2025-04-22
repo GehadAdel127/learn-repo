@@ -51,7 +51,20 @@
         <button type="button" onclick="convert()">Submit</button>
         <p id="result"></p>
     </form> -->
+
+    <!-- Dice Roller Game -->
+    <div class="container">
+        <h1>Dice Roller Game</h1>
+        <div class="style">
+            <label># of dice :</label>
+            <input type="number" value="1" min="1" max="6" id="numOfDice">
+            <button onclick="rollDice()">Roll Dice</button>
+        </div>
+        <div id="result"></div>
+        <div id="diceImages"></div>
+    </div>
 </body>
 <script src="script.js"></script>
 <script src="temperatureCoversionProgram.js"></script>
+<script src="rollDice.js"></script>
 </html>

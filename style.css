@@ -87,3 +87,44 @@
 .conversionForm button:hover{
     background: #eff4f7;
 }
+
+
+.container{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.container button{
+    background: #0D98BA;
+    border: 1px solid #0D98BA;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.container button:hover{
+    background: #74cbe0;
+}
+.container input{
+    width: 150px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0px;
+}
+.container .style{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#result{
+    margin: 25px;
+}
+#diceImages img{
+    width: 150px;
+    margin: 5px;
+}
