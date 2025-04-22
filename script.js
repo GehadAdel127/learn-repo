@@ -243,7 +243,7 @@ console.log(evensNumbers);
 const prices = [5 , 10 , 15 , 20]
 const total =  prices.reduce(sum)
 
-console.log(total);
+console.log(`$${total}`);
 
 function sum(accumulator , element){
     return accumulator + element
