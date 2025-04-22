@@ -189,4 +189,13 @@ const name4 = "Nour"
 allNames(name2 , name3 , name4)
 
 
-// Dice Roller game:
+// Callback: if i want to sure that a function followed by another function whatever the first took time to excute i could use the callback function which is like that :
+
+function hello(callback){
+    console.log("Hello!");
+    callback()
+}
+function goodbye(){
+    console.log("GoodBye!");
+}
+hello(goodbye)
