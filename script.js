@@ -207,6 +207,22 @@ let numbersOfArray = [1 , 2 , 3 , 4 , 5]
 numbersOfArray.forEach(double)
 numbersOfArray.forEach(display)
 
+// function expression
+// numbersOfArray.forEach(function(element , index , array){
+//     return array[index] = element * 2
+// })
+// numbersOfArray.forEach(function (element){
+//     console.log(element);
+// })
+
+// arrow function
+// numbersOfArray.forEach((element , index , array) =>{
+//     return array[index] = element * 2
+// })
+// numbersOfArray.forEach((element) =>{
+//     console.log(element);
+// })
+
 function display(element){
     console.log(element);
     
@@ -217,13 +233,26 @@ function double (element , index , array){
 
 // map() method: it's the same thing of the forEach() but the original array doesn't change but the new one
 
-const squares = numbersOfArray.map(square)
+let squares = numbersOfArray.map(square)
 
 function square(element){
     return Math.pow(element , 2)
 }
 console.log(numbersOfArray);
 console.log(squares);
+
+
+// function expression
+// squares = numbersOfArray.map(function(element){
+//     return Math.pow(element , 2)
+// })
+// console.log(squares);
+
+// arrow function
+// squares = numbersOfArray.map((element)=>{
+//     return Math.pow(element , 2)
+// })
+// console.log(squares);
 
 
 // filter() method: creates a new array bu filtering out elements
@@ -238,6 +267,18 @@ function even(element){
 console.log(evensNumbers);
 
 
+// function expression
+// evensNumbers = numbers.filter(function (element){
+//     return element % 2 == 0
+// })
+// console.log(evensNumbers);
+
+// arrow function
+// evensNumbers = numbers.filter((element)=>{
+//     return element % 2 == 0
+// })
+// console.log(evensNumbers);
+
 // reduce() method : reduce the elements of an array to a single value
 
 const prices = [5 , 10 , 15 , 20]
@@ -249,9 +290,28 @@ function sum(accumulator , element){
     return accumulator + element
 }
 
+// function expression
+// total = prices.reduce(function(previous , next){
+//     previous + next
+// })
+// console.log(`$${total}`);
+
+// arrow function
+// total = prices.reduce((previous , next)=>{
+//     previous + next
+// })
+// console.log(`$${total}`);
 
 // function expressions:
 const hello1 = function (){
     console.log("Hello!");
 }
 hello1()
+
+
+// arrow function:(parameters) => {the code}
+const hello2 = (name) => console.log(`Hello ${name}`);
+hello2("Gehad")
+
+
+setTimeout(() => console.log("Good Bye Gogo!"),2000)
