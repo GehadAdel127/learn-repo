@@ -214,3 +214,13 @@ function display(element){
 function double (element , index , array){
     array[index] = element * 2
 }
+
+// map() method: it's the same thing of the forEach() but the original array doesn't change but the new one
+
+const squares = numbersOfArray.map(square)
+
+function square(element){
+    return Math.pow(element , 2)
+}
+console.log(numbersOfArray);
+console.log(squares);
