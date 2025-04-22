@@ -224,3 +224,15 @@ function square(element){
 }
 console.log(numbersOfArray);
 console.log(squares);
+
+
+// filter() method: creates a new array bu filtering out elements
+
+numbers = [1 , 2 , 3 , 4 , 5 , 6]
+let evensNumbers = numbers.filter(even)
+
+function even(element){
+    return element % 2 == 0
+}
+
+console.log(evensNumbers);
